@@ -75,13 +75,15 @@ export const Gallery1 = ({ category }) => {
         <Card key={video.id} style={{ width: '18rem', margin: '10px' }}>
           <video controls width="250" style={{ maxWidth: '100%' }} key={video.id}>
             <source src={video.video_files[0].link} type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
+            Sorry, your browser doesn't support embedded videos.Sorry, your browser doesn't support embedded videos.
+            
           </video>
           <Card.Body>
             <Card.Title>{video.user.name}</Card.Title>
             <Card.Text>ID: {video.id}</Card.Text>
           </Card.Body>
         </Card>
+
       ))}
     </div>
   );
